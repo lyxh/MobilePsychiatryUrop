@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="fill_parent"
+  android:layout_height="fill_parent"
+  android:fillViewport="true">
+ <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" 
+        >
+
+         <LinearLayout
+             android:id="@+id/header"
+             android:layout_width="fill_parent"
+             android:layout_height="wrap_content"
+             android:paddingBottom="5dip"
+             android:paddingLeft="350dip"
+             android:paddingTop="100dip" >
+
+                 <TextView android:layout_width="fill_parent"
+                android:layout_height="wrap_content"        
+                android:text="Welcome to Hector Reyes House."
+                android:textSize="45px"/>
+
+        </LinearLayout>
+        
+        
+        <LinearLayout
+          
+          android:orientation="vertical"
+          android:layout_width="800px"
+          android:layout_height="1000px"
+         android:paddingLeft="520px"
+             android:paddingTop="180px"  
+           
+          
+         >
+                             <!--  Email Label -->
+          <TextView android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="User name: "
+                   android:textSize="25px" />
+          <EditText 
+              android:id="@+id/username"
+              android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dip"
+                android:layout_marginBottom="20dip"
+                android:singleLine="true"
+                   android:textSize="25px" />
+          
+          <!--  Password Label -->
+          <TextView android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="Password: "
+                   android:textSize="25px" 
+                   />
+          <EditText 
+              android:id="@+id/password"
+              android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dip"
+                android:singleLine="true"
+                android:password="true"
+                   android:textSize="25px" />
+          
+          <!-- Login button -->
+          <Button android:id="@+id/login"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dip"
+                android:text="Login"
+                   android:textSize="25px" 
+                android:onClick="start" />
+          
+          <TextView 
+                android:id="@+id/feedback"
+                android:layout_height="5000dip"
+                android:layout_width="fill_parent"
+                android:text=""
+                android:textSize="25px" 
+           />
+        </LinearLayout>
+        <!-- Login Form Ends -->
+        
+           <LinearLayout
+             android:id="@+id/webView"
+             android:layout_width="fill_parent"
+             android:layout_height="0dip"
+            >
+        <WebView
+             android:id="@+id/myWebView"
+             android:layout_width="fill_parent"
+             android:layout_height="1dip"
+            />
+        </LinearLayout>
+  </RelativeLayout>
+</ScrollView>

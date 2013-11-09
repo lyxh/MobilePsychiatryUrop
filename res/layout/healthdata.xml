@@ -1,0 +1,91 @@
+<LinearLayout
+    android:id="@+id/linearLayout2"
+    android:layout_width="fill_parent" android:layout_height="fill_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" 
+    android:screenOrientation="landscape"
+     android:background="#ffffff"
+     android:padding="20dp"
+    >
+    
+    
+     <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <Button
+            android:id="@+id/previousweek"
+            style="@style/month_button"
+            android:layout_width="wrap_content"
+            android:layout_height="45px"
+            android:layout_weight="0.07"
+            android:text="previous week" 
+            android:textSize="20px"
+            	                android:background="#ffb511"
+	                android:textColor="#ffffff"  />
+
+        <TextView
+            android:id="@+id/tvWeekMonthYear"
+            android:layout_width="wrap_content"
+            android:layout_height="32dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_weight="0.24"
+            android:gravity="center"
+            android:textSize="20px"
+             android:textColor="#444444" />
+
+        <Button
+            android:id="@+id/nextweek"
+            style="@style/month_button"
+            android:layout_width="wrap_content"
+            android:layout_height="45px"
+            android:layout_weight="0.07"
+            android:text="next week"
+            android:textSize="20px"
+           	                android:background="#ffb511"
+	                android:textColor="#ffffff" />
+    </LinearLayout>
+
+        
+    
+             <TextView
+	            android:id="@+id/title"
+	            android:layout_width="fill_parent"
+	            android:layout_height="wrap_content"
+	            android:layout_marginLeft="0dp"
+	            android:layout_marginTop="5dp"
+	            android:textSize="20px"
+	            android:gravity="center"
+	            android:text="Hourly Sensor Score"
+	            android:textColor="#444444"
+            />
+         <com.androidplot.xy.XYPlot
+            android:id="@+id/mySimpleXYPlot1"
+            android:layout_width="wrap_content"
+            android:layout_height="400dp"
+            android:layout_weight="0.5"
+            androidPlot.title="Hourly sensor score"
+         
+            androidPlot.graphWidget.domainLabelPaint.textSize="16dp"
+            androidPlot.graphWidget.rangeLabelPaint.textSize="20dp"
+            androidPlot.graphWidget.rangeOriginLabelPaint.textSize="20dp"
+            androidPlot.graphWidget.domainOriginLabelPaint.textSize="16dp"
+            androidPlot.legendWidget.textPaint.textSize="20dp"
+         /> 
+         
+          <com.androidplot.xy.XYPlot
+            android:id="@+id/mySimpleXYPlot2"
+            android:layout_width="wrap_content"
+            android:layout_height="150dp"
+            android:layout_weight="0.2"
+            androidPlot.title="Hourly Accelerometer score"
+         
+            androidPlot.graphWidget.domainLabelPaint.textSize="16dp"
+            androidPlot.graphWidget.rangeLabelPaint.textSize="20dp"
+            androidPlot.graphWidget.rangeOriginLabelPaint.textSize="20dp"
+            androidPlot.graphWidget.domainOriginLabelPaint.textSize="16dp"
+            androidPlot.legendWidget.textPaint.textSize="20dp"
+         />         
+
+</LinearLayout>

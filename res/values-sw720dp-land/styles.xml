@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="week_item" parent="@android:style/Theme.Light">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:layout">@layout/week_day_item</item>
+    </style>
+    
+     <style name="month_button" parent="@android:style/Theme.Light">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">60dp</item>
+        <item name="android:padding">0dp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:layout_marginLeft">5dp</item>
+        <item name="android:layout_marginRight">5dp</item>
+        <item name="android:layout_marginBottom">5dp</item>
+    </style>
+    
+     <style name="month_item" parent="@android:style/Theme.Light">
+        <item name="android:textSize">14sp</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_alignParentLeft">true</item>
+        <item name="android:textAppearance">?android:attr/textAppearanceMedium</item>
+    </style>
+
+     
+    <color name="white_o">#FFFFFFFF</color>
+    <style name="Theme.NoTitleBar.Fullscreen" parent="@android:style/Theme.Light">
+         <item name="android:windowFullscreen">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:textAppearance">?android:attr/textAppearanceLarge</item>
+         <item name="android:background">@color/white_o</item>
+    </style>
+
+     
+</resources>

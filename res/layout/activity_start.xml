@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:id="@+id/back"
+  android:background="#3e90ff"
+  android:textColor="#000000" 
+  android:layout_width="fill_parent"
+  android:layout_height="fill_parent"
+  android:fillViewport="true">
+ <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" 
+>
+
+         <LinearLayout
+             android:id="@+id/header"
+             android:orientation="vertical"
+             android:layout_width="fill_parent"
+             android:layout_height="wrap_content"
+             android:paddingBottom="5dip"
+             android:paddingLeft="200dip"
+             android:paddingTop="200dip" 
+          >
+   
+                 <TextView android:layout_width="fill_parent"
+	                android:layout_height="wrap_content"        
+	                android:text="Welcome to Hector Reyes House.
+	                "
+	                android:textSize="60px"
+	                 android:textColor="#ffffff" />
+                  
+                 <TextView android:layout_width="fill_parent"
+	                android:layout_height="wrap_content"        
+	                android:paddingLeft="150px"
+	                android:text="Please scan your card to log in."
+	                android:textSize="45px"
+	                 android:textColor="#ffffff" />
+
+        </LinearLayout>
+        
+        
+        <LinearLayout
+          android:orientation="vertical"
+          android:layout_width="800px"
+          android:layout_height="1000px"
+          android:paddingLeft="520px"
+          android:paddingTop="400px"  
+         >  
+	          <!--  Password Label -->
+	          <TextView 
+	                android:layout_width="fill_parent"
+	                android:layout_height="wrap_content"
+	                android:text="Tag ID "
+	                android:textSize="25px" 
+	                android:textColor="#ffffff"
+	          />
+	          <EditText 
+	                android:id="@+id/password"
+	                android:layout_width="fill_parent"
+	                android:layout_height="wrap_content"
+	                android:layout_marginTop="5dip"
+	                android:singleLine="true"
+	                android:password="true"
+	                android:text="00123456789"
+	                android:textSize="25px" 
+	          />
+	          
+	          <!-- Login button -->
+	          <Button android:id="@+id/login"
+	                android:layout_width="fill_parent"
+	                android:layout_height="45dip"
+	                android:layout_marginTop="30dip"
+	                android:background="#ffb511"
+	                android:textColor="#ffffff"
+	                android:text="Login"
+	                
+	                android:textSize="25px" 
+	                android:onClick="start" />
+	          
+	          <TextView 
+	                android:id="@+id/feedback"
+	                android:layout_height="5000dip"
+	                android:layout_width="fill_parent"
+	                android:text=""
+	                android:textSize="25px" 
+	           />
+        </LinearLayout>
+        
+        <RelativeLayout
+             android:orientation="vertical"
+             android:layout_width="fill_parent"
+             android:layout_height="3dip"
+             android:id="@+id/RelativeLayout"
+         >
+            <WebView
+             android:id="@+id/myWebView"
+             android:layout_width="match_parent"
+             android:layout_height="1dip"
+            />
+            <WebView
+             android:id="@+id/eachWebView"
+             android:layout_width="match_parent"
+             android:layout_height="1dip"
+            />
+
+      </RelativeLayout>
+  </RelativeLayout>
+</ScrollView>

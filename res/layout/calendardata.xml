@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="fill_parent"
+  android:layout_height="fill_parent"
+  android:fillViewport="true"
+  android:background="#ffffff">
+  <LinearLayout 
+    android:id="@+id/simple"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="20dp"
+    android:screenOrientation="landscape"
+    android:textSize="20px"
+   
+     >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <Button
+            android:id="@+id/previousweek"
+            style="@style/month_button"
+            android:layout_width="wrap_content"
+            android:layout_height="45px"
+            android:layout_weight="0.07"
+            android:text="previous week" 
+            android:textSize="20px"
+            	                android:background="#ffb511"
+	                android:textColor="#ffffff"  />
+
+        <TextView
+            android:id="@+id/tvWeekMonthYear"
+            android:layout_width="wrap_content"
+            android:layout_height="32dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_weight="0.24"
+            android:gravity="center"
+            android:textSize="20px"
+             android:textColor="#444444" />
+
+        <Button
+            android:id="@+id/nextweek"
+            style="@style/month_button"
+            android:layout_width="wrap_content"
+            android:layout_height="45px"
+            android:layout_weight="0.07"
+            android:text="next week"
+            android:textSize="20px"
+           	                android:background="#ffb511"
+	                android:textColor="#ffffff" />
+    </LinearLayout>
+
+    <TableLayout
+        android:id="@+id/tableview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.06"
+        android:layout_marginLeft="10sp"
+        android:paddingTop="20px"
+       android:textSize="25px" 
+      />
+
+</LinearLayout>
+</ScrollView>

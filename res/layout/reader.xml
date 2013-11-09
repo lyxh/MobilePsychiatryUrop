@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?><LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+    	<EditText 
+           android:id="@+id/reader_write"
+           android:layout_width="fill_parent"
+           android:layout_height="50px"
+           android:layout_marginTop="5dip"
+           android:text=""
+           android:singleLine="true"
+           android:textSize="25px" 
+     />
+
+     <Button android:id="@+id/write_rfid"
+           android:layout_width="100dip"
+           android:layout_height="45dip"
+           android:layout_marginTop="30dip"
+           android:background="#ffb511"
+           android:textColor="#ffffff"
+           android:text="Write"	                
+           android:textSize="25px" 
+           android:onClick="write"
+     />
+     
+     <TextView 
+           android:id="@+id/readerfeedback"
+           android:layout_height="5000dip"
+           android:layout_width="1300dip"
+           android:text="reader feedback"
+           android:textSize="25px" 
+    />
+    
+</LinearLayout>
